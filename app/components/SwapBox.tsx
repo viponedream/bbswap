@@ -137,6 +137,18 @@ export default function SwapBox() {
           Built with ❤️ by <a href="https://github.com/bapakkau15" className="underline" target="_blank" rel="noopener noreferrer">bapakkau15</a>
         </p>
         <p>tea username: <span className="font-mono">riyanibay</span></p>
+        <p>
+  AET Contract:{' '}
+  <a
+    href="https://sepolia.tea.xyz/address/0xa9fE432eeC1cF3b1ec655f6cAb5cEB5fe2042bcb"
+    className="underline text-blue-400 hover:text-blue-300"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    0xa9fE...2bcb
+  </a>
+</p>
+
       </div>
 
       {/* TX History */}
