@@ -134,7 +134,7 @@ export default function SwapBox() {
       <div className="text-center text-xs text-zinc-400 mt-6 space-y-1">
         <p>Built on Tea Sepolia Testnet</p>
         <p>
-  AET Contract:{' '}
+
 
 </p>
 
