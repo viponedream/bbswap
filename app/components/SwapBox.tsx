@@ -9,7 +9,7 @@ declare global {
 import { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
 
-const AET_ADDRESS = '0xa9fE432eeC1cF3b1ec655f6cAb5cEB5fe2042bcb';
+const AET_ADDRESS = '0x6937Aa9a50909087a0e7bf686c1cc3394f691348';
 const AET_ABI = [
   "function wrap() payable",
   "function unwrap(uint256 amount)",
@@ -67,13 +67,13 @@ export default function SwapBox() {
     fetchBalances();
   }, []);
 
-  const fromToken = direction === 'wrap' ? 'TEA' : 'AET';
-  const toToken = direction === 'wrap' ? 'AET' : 'TEA';
+  const fromToken = direction === 'wrap' ? 'TEA' : 'BB';
+  const toToken = direction === 'wrap' ? 'BB' : 'TEA';
   const fromBalance = direction === 'wrap' ? teaBalance : aetBalance;
 
   return (
     <div className="bg-white dark:bg-zinc-900/90 backdrop-blur border border-zinc-700 rounded-2xl shadow-2xl p-6 w-full max-w-md text-black dark:text-white">
-      <h2 className="text-xl font-bold mb-6 text-center">AETSwap</h2>
+      <h2 className="text-xl font-bold mb-6 text-center">BBSwap</h2>
 
       {/* FROM Box */}
       <div className="bg-zinc-100 dark:bg-zinc-800 rounded-xl p-4 mb-3">
@@ -134,19 +134,8 @@ export default function SwapBox() {
       <div className="text-center text-xs text-zinc-400 mt-6 space-y-1">
         <p>Built on Tea Sepolia Testnet</p>
         <p>
-          Built with ❤️ by <a href="https://github.com/bapakkau15" className="underline" target="_blank" rel="noopener noreferrer">bapakkau15</a>
-        </p>
-        <p>tea username: <span className="font-mono">riyanibay</span></p>
-        <p>
   AET Contract:{' '}
-  <a
-    href="https://sepolia.tea.xyz/address/0xa9fE432eeC1cF3b1ec655f6cAb5cEB5fe2042bcb"
-    className="underline text-blue-400 hover:text-blue-300"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    0xa9fE...2bcb
-  </a>
+
 </p>
 
       </div>
